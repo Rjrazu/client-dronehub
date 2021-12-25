@@ -31,7 +31,7 @@ const Purchase = () => {
 
     //load data from server
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://evening-garden-60157.herokuapp.com/products/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setProduct(data);
@@ -46,7 +46,7 @@ const Purchase = () => {
             status:'pending',
             product:product
         }
-        fetch('http://localhost:5000/orders' , {
+        fetch('https://evening-garden-60157.herokuapp.com/orders' , {
             method:"POST",
             headers: {
                 'content-type':'application/json'

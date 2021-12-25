@@ -25,7 +25,7 @@ const Review = () => {
       name : user.displayName,
       email:user.email,
     }
-    fetch('http://localhost:5000/review' , {
+    fetch('https://evening-garden-60157.herokuapp.com/review' , {
       method:"POST",
       headers:{
         'content-type':'application/json'

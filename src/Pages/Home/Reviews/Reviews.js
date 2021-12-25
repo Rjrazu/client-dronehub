@@ -8,7 +8,7 @@ const Reviews = () => {
 
     //load all the reviews
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://evening-garden-60157.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

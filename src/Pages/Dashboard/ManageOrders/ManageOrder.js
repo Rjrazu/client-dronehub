@@ -19,7 +19,7 @@ const ManageOrder = () => {
 
     //load orders
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://evening-garden-60157.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => {
           setIsUpdated(false)
@@ -33,7 +33,7 @@ const ManageOrder = () => {
           ...order,
           status:'shipped'
         }
-        fetch(`http://localhost:5000/updateOrder/${id}` , {
+        fetch(`https://evening-garden-60157.herokuapp.com/updateOrder/${id}` , {
           method:"PUT",
           headers:{
             'content-type':'application/json'
@@ -54,7 +54,7 @@ const ManageOrder = () => {
         confirmButtonText: 'Yes',
       }).then((result) => {
         if (result.isConfirmed) {
-          fetch(`http://localhost:5000/deleteOrder/${id}`,{
+          fetch(`https://evening-garden-60157.herokuapp.com/deleteOrder/${id}`,{
             method:"DELETE",
           }).then(res => res.json())
             .then(data => {

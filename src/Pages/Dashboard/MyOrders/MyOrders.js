@@ -10,7 +10,7 @@ const MyOrders = () => {
     const {user} = useAuth()
     const [orders,setOrders] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://evening-garden-60157.herokuapp.com/orders/${user.email}`)
         .then(res => res.json())
         .then(data => setOrders(data))
     } , [user.email])
@@ -23,7 +23,7 @@ const MyOrders = () => {
             confirmButtonText: 'Yes',
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/deleteOrder/${id}` , {
+                fetch(`https://evening-garden-60157.herokuapp.com/deleteOrder/${id}` , {
                     method:"DELETE"
                 }).then(res => res.json())
                 .then(data => {

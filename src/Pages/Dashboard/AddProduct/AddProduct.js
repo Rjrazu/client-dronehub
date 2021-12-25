@@ -10,7 +10,7 @@ import BackBtn from '../../Shared/BackBtn/BackBtn';
 const AddProduct = () => {
     const { register , handleSubmit,  formState: { errors } , reset} = useForm();
     const onSubmit = (data) => {
-        fetch('http://localhost:5000/addProducts' , {
+        fetch('https://evening-garden-60157.herokuapp.com/addProducts' , {
             method:'POST',
             headers:{
                 'content-type':'application/json'

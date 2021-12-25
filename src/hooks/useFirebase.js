@@ -29,7 +29,7 @@ const useFirebase = () => {
 
     //load is admin
     useEffect(() => {
-        fetch(`http://localhost:5000/users/${user.email}`)
+        fetch(`https://evening-garden-60157.herokuapp.com/users/${user.email}`)
         .then(res => res.json())
         .then(data =>{
             console.log(data)
@@ -137,7 +137,7 @@ const useFirebase = () => {
     //save a user in database
     const saveUser = (email , displayName ,method) => {
         const user = {email , displayName}
-        fetch('http://localhost:5000/users' , {
+        fetch('https://evening-garden-60157.herokuapp.com/users' , {
             method: method,
             headers: {
                 'Content-Type':'application/json'
