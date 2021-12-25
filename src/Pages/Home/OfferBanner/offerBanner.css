@@ -1,0 +1,13 @@
+/* css for offerBanner .js */
+.offer {
+  background-image: url("https://i.ibb.co/FJHms9N/feedback.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+}

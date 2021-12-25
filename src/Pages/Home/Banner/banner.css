@@ -1,0 +1,15 @@
+/* css for banner.js */
+.banner {
+  background-image: url("https://i.ibb.co/mGcmq12/Skydio.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  min-height: 80vh;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  color: white;
+}
